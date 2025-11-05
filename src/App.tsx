@@ -1,8 +1,14 @@
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import classNames from 'classnames';
-import { NotFoundPage } from './components/NotFoundPage';
-import { PeoplePage } from './components/PeoplePage';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+// eslint-disable-next-line import/extensions
+import { NotFoundPage } from './components/NotFoundPage.tsx';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+// eslint-disable-next-line import/extensions
+import { PeoplePage } from './components/PeoplePage.tsx';
 
 export const App = () => (
   <div data-cy="app">
