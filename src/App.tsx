@@ -1,8 +1,8 @@
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import classNames from 'classnames';
-import { PeoplesTable } from './components/PeoplesTable';
 import { NotFoundPage } from './components/NotFoundPage';
+import { PeoplePage } from './components/PeoplePage';
 
 export const App = () => (
   <div data-cy="app">
@@ -45,8 +45,8 @@ export const App = () => (
           <Route path="/" element={<h1 className="title">Home Page</h1>} />
           <Route path="/home" element={<Navigate to="/" replace={true} />} />
           <Route path="/people">
-            <Route index element={<PeoplesTable />} />
-            <Route path=":slug" element={<PeoplesTable />} />
+            <Route index element={<PeoplePage />} />
+            <Route path=":slug" element={<PeoplePage />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
